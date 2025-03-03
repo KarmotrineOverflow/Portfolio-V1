@@ -23,11 +23,16 @@
     src: url("../assets/fonts/roboto/Roboto-Light.ttf");
 }
 
+/* Classes (to be used throughout the website) */
+
 body {
 
     margin: 0;
     padding: 0;
     background-color: #F6F4E4;
+
+    font-family: "Roboto";
+    color: #8A7F6A;  
 }
 
 .bars {
@@ -41,8 +46,8 @@ body {
 
     width: 100%;    
     height: auto;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     justify-content: center;
     align-items: center;
 }
@@ -54,6 +59,7 @@ body {
 
     text-align: center;
     margin: 0%;
+    margin-top: 10%;
     padding: 0%;
 
     color: #8A7F6A;    
@@ -62,7 +68,7 @@ body {
 .section-title-underline {
 
     width: 100%;
-    height: 2px;
+    height: 1px;
 
     margin-bottom: 5%;
 
@@ -91,6 +97,9 @@ body {
 
     background-color: #C1B8A4;
     width: 35px;
+
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .inner-bar {
@@ -110,7 +119,7 @@ header {
 header h1 {
 
     font-family: "Roboto-Bold";
-    font-size: 150px;
+    font-size: 120px;
 }
 
 .beginning-section {
@@ -199,3 +208,54 @@ header h1 {
 
 /* ABOUT ME CSS */
 
+.about-section {    
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+
+    width: 100%;
+    height: auto;
+}
+
+.about-section-paragraph {
+
+    display: block;
+    width: 50%;
+
+    text-shadow: none;
+}
+
+.about-section-paragraph ul {
+
+    list-style: none;   
+}
+
+.about-section-paragraph a {
+
+    text-decoration: none; 
+    color: black;
+}
+
+.about-section-paragraph a:hover {
+
+    text-decoration: underline;
+    color: #A19B87;
+
+    transition: 0.3s;
+}
+
+.about-section-paragraph a img {
+
+    text-decoration: none; 
+    margin-right: 5%;
+}
+
+.about-section-picture {
+
+    width: 30%;
+    height: 50%;
+
+    border-radius: 35px;
+    box-shadow: 2px 2px #c6c6c6;
+}

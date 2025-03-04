@@ -1,53 +1,27 @@
-/* ABOUT ME CSS */
+.about-grid {
 
-.about-section {    
+    border: 2px solid pink;
+    width: 80%;
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-
-    width: 100%;
-    height: auto;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(2, minmax(200px, 300px));
 }
 
-.about-section-paragraph {
+.about-grid .about-grid-paragraph {
 
-    display: block;
-    width: 50%;
-
-    text-shadow: none;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
 }
 
-.about-section-paragraph ul {
+.about-grid .about-grid-picture {
 
-    list-style: none;   
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
 }
 
-.about-section-paragraph a {
+.about-grid .about-grid-links {
 
-    text-decoration: none; 
-    color: black;
-}
-
-.about-section-paragraph a:hover {
-
-    text-decoration: underline;
-    color: #A19B87;
-
-    transition: 0.3s;
-}
-
-.about-section-paragraph a img {
-
-    text-decoration: none; 
-    margin-right: 5%;
-}
-
-.about-section-picture {
-
-    width: 30%;
-    height: 50%;
-
-    border-radius: 35px;
-    box-shadow: 2px 2px #c6c6c6;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
 }

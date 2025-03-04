@@ -23,105 +23,148 @@
     src: url("../assets/fonts/roboto/Roboto-Light.ttf");
 }
 
-/* Classes (to be used throughout the website) */
-
 body {
 
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     background-color: #F6F4E4;
 
     font-family: "Roboto";
-    color: #8A7F6A;  
+    color: #8A7F6A;
 }
 
-.bars {
+.section-container {
+
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
 
     display: flex;
-    align-items: end;
-    width: auto;
+    flex-direction: row;
 }
 
-.section-content {
+.section-content-container {
 
-    width: 100%;    
-    height: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.section-title p {
+.section-title-container {
 
-    font-family: "Roboto-Bold";
-    font-size: xx-large;
+    width: 100%;
 
-    text-align: center;
-    margin: 0%;
-    margin-top: 10%;
-    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    color: #8A7F6A;    
+    font-family: "Roboto-Medium";
+    text-shadow: 1px 0px #bdbdbd;
+    font-size: 30px;
 }
 
 .section-title-underline {
 
-    width: 100%;
-    height: 1px;
-
-    margin-bottom: 5%;
+    width: 80%;
+    height: 2px;
 
     background-color: #8A7F6A;
 }
 
-.middle-section {
+.bar-container {
 
-    width: 100%;
-    height: 100%;
+    border: 1px solid red;
+    width: auto;
+
     display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 0.5rem;
 }
 
-.middle-section .bars .outer-bar, .middle-bar, .inner-bar {
+.bar {
 
     height: 100%;
+    width: 35px;
 }
 
 .outer-bar {
 
     background-color: #A19B87;
-    width: 35px;
 }
 
 .middle-bar {
 
     background-color: #C1B8A4;
-    width: 35px;
-
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .inner-bar {
 
     background-color: #E1D5B2;
-    width: 35px;
 }
 
-/* PROJECTS SECTION DESIGN */
+/* XS */
+@media (min-width: 475px) {
 
-.project-section {
+    .bar {
 
-    display: grid;    
-    background-color: #A19B87;
+        max-width: 15px;
+    }
+
+    .bar-container {
+
+        gap: 0;
+    }
 }
 
-.project-tile {
-    
-    display: block;
-    margin: auto;
+/* SM */
+@media (min-width: 640px) {
 
-    width: 30%;
-    height: 50%;
-    background-color: #413819;
+    .bar {
+
+        max-width: 20px;
+    }
+
+    .bar-container {
+
+        gap: 0;
+    }
 }
+
+/* MD */
+@media (min-width: 768px) {
+
+    .bar {
+
+        max-width: 25px;
+    }
+
+    .bar-container {
+
+        gap: 0;
+    }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+
+    .bar {
+
+        max-width: 35px;
+    }
+
+    .bar-container {
+
+        gap: 0.5rem;
+    }
+}
+
+/* XL */
+@media (min-width: 1280px) {}
+
+/* 2XL */
+@media (min-width: 1536px) {}
+
+

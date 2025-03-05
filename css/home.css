@@ -23,6 +23,11 @@
     text-shadow: 1px 0px #bdbdbd;
 }
 
+.home-page .section-container {
+
+    height: 100%;
+}
+
 .home-page .section-content-container {
 
     padding: 8px;
@@ -127,7 +132,7 @@
 
     .home-page h1 {
 
-        font-size: 135px;
+        font-size: 120px;
     }
     
     .home-page p {
@@ -137,17 +142,17 @@
 
     .home-page a {
 
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .home-page ul {
 
-        display: block;
+        gap: 0.5rem;
     }
 
     .home-page ul li {
 
-        margin-top: 10px;
+        margin-top: 2px;
     }
 }
 
@@ -163,6 +168,11 @@
     .home-page a {
 
         font-size: xx-large;
+    }
+
+    .home-page h1 {
+
+        font-size: 135px;
     }
 }
 

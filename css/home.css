@@ -1,86 +1,14 @@
-/* Home Page CSS */
+/* GENERAL SECTION DESIGN */
 
-header {
-    
-    text-align: center;
-    font-family: "Roboto";
-}
-
-header h1 {
-
-    font-family: "Roboto-Bold";
-    font-size: 120px;
-}
-
-.beginning-section {
-
-    width: 100%;
-    height: 100%;
-    
-    color: #8A7F6A;
-
-    display: flex;
-}
-
-.beginning-section h1, p, ul, a {
-
-    text-shadow: 1px 0px #bdbdbd;
-}
-
-.beginning-section p {
-
-    font-size: 28px;
-}
-
-.beginning-section ul {
-
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15%;
-}
-
-.beginning-section li a {
-
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    font-family: "Roboto-Light";
-    font-size: xx-large;
-    font-weight: 200;
-
-    color: #8A7F6A;
-    display: block;
-    padding: 0px;
-    margin: 0;
-}
-
-.beginning-section li .arrow-down {
-
-    margin: auto;
-}
-
-.beginning-section li a:hover {
-
-    margin-bottom: 10px;
-    transition: 0.8s;
-}
-
-.beginning-section .outer-bar {
-    height:80%;
-}
-
-.beginning-section .middle-bar {
-    height:60%;
-}
-
-.beginning-section .inner-bar {
-    height:40%;
-}
+@keyframes arrow-anim {
+    from {margin-bottom: 0px;}
+    to {margin-bottom: 5px;}
+  }
 
 .arrow-down {
 
     padding: 0;
-    margin: 0;
+    margin: auto;
 
     width: 0; 
     height: 0; 
@@ -90,8 +18,182 @@ header h1 {
     border-top: 10px solid #8A7F6A;
 }
 
-#bread-and-butter {
+.home-page {
+
+    text-shadow: 1px 0px #bdbdbd;
+}
+
+.home-page .section-container {
+
+    height: 100%;
+}
+
+.home-page .section-content-container {
+
+    padding: 8px;
+}
+
+.home-page .outer-bar {
+
+    height: 80%;
+}
+
+.home-page .middle-bar {
+
+    height: 60%;
+}
+
+.home-page .inner-bar {
+
+    height: 40%;
+}
+
+/* HOME PAGE TEXTS */
+
+.home-page h1 {
+
+    font-family: "Roboto-Bold";
+    font-size: 135px;
+}
+
+.home-page p {
+
+    font-size: 25px;
+    text-align: center;
+}
+
+.home-page #bread-and-butter {
 
     font-family: "Roboto-Medium";
-    margin-top: 5%
+}
+
+.home-page a {
+
+    font-family: "Roboto-Light";
+    font-size: xx-large;
+    color: #8A7F6A;
+}
+
+/* HOME PAGE LINKS */
+.home-page ul {
+
+    margin-top: 50px;
+
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.home-page ul li {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ANIMATION EFFECTS */
+.home-page ul li a:hover {
+
+   animation: arrow-anim 0.8s forwards;
+}
+
+/* XS */
+@media (min-width: 475px) {
+
+    .home-page h1 {
+
+        font-size: 95px;
+    }
+    
+    .home-page p {
+    
+        font-size: 20px;
+    }
+
+    .home-page a {
+
+        font-size: 30px;
+    }
+
+    .home-page ul {
+
+        display: block;   
+        margin: 0 auto;     
+    }
+
+    .home-page ul li {
+
+        margin-top: 10px;
+    }
+}
+
+/* SM */
+@media (min-width: 696px) {
+
+    .home-page h1 {
+
+        font-size: 120px;
+    }
+    
+    .home-page p {
+    
+        font-size: 25px;
+    }
+
+    .home-page a {
+
+        font-size: 30px;
+    }
+
+    .home-page ul {
+
+        gap: 0.5rem;
+    }
+
+    .home-page ul li {
+
+        margin-top: 2px;
+    }
+}
+
+/* MD */
+@media (min-width: 768px) {
+
+    .home-page ul {
+
+        display: flex;
+        gap: 3rem;
+    }
+
+    .home-page a {
+
+        font-size: xx-large;
+    }
+
+    .home-page h1 {
+
+        font-size: 135px;
+    }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+
+    .home-page ul {
+
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+/* XL */
+@media (min-width: 1280px) {
+
+    
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+
+  
 }

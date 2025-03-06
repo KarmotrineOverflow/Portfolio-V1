@@ -1,0 +1,105 @@
+/* CONTACT SECTION BAR DESIGN */
+
+.contact .outer-bar {
+
+    height: 80%;
+}
+
+.contact .middle-bar {
+
+    height: 60%;
+}
+
+.contact .inner-bar {
+
+    height: 40%;
+}
+
+.contact .bar-container {
+
+    align-items: start;
+}
+
+/* CONTACT SECTION CONTENT */
+
+.contact-grid {
+
+    border: 1px solid pink;
+
+    margin-top: 1rem;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(auto-fit, auto);
+
+    justify-content: center;
+    gap: 1rem 1rem;
+
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+}
+
+/* FORM GRID */
+
+.contact-grid .contact-form {
+
+    border: 2px solid black;
+
+    width: 400px;
+}
+
+.contact form {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.text-field {
+
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0.2px solid #E1D5B2;
+}
+
+/* AVAILABILITY GRID */
+
+.contact .availability {
+
+    border: 2px solid black;
+    width: 400px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contact .availability-status {
+
+    border: 2px solid black;
+
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contact #status-header {
+
+    border: 2px solid black;
+
+    font-family: "Roboto-Medium";
+    font-size: 50px;
+}
+
+.contact #status-statement {
+
+    border: 2px solid black;
+
+    font-family: "Roboto-Medium";
+    font-size: 30px;
+}
+
+/* TODO: Add Contact section responsive design */

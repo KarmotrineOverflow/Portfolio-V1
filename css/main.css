@@ -43,7 +43,6 @@ body {
 
 .section-content-container {
 
-    border: 1px solid red;
     width: 100%;
 
     display: flex;
@@ -74,7 +73,6 @@ body {
 
 .bar-container {
 
-    border: 1px solid red;
     width: auto;
 
     display: flex;

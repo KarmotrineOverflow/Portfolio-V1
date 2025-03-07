@@ -43,8 +43,6 @@
 
 .contact-grid .contact-form {
 
-    border: 2px solid black;
-
     width: 400px;
 }
 
@@ -60,14 +58,26 @@
 
     padding: 0.5rem;
     border-radius: 5px;
-    border: 0.2px solid #E1D5B2;
+    border: 0.2px solid #8A7F6A;
+}
+
+.contact-form #submit-btn {
+
+    padding: 0.5rem;
+    background-color: #8A7F6A;
+
+    font-family: "Roboto";
+    font-size: medium;
+    color: #F6F4E4;
+
+    border-radius: 5px;
+    border: 0px;
 }
 
 /* AVAILABILITY GRID */
 
 .contact .availability {
 
-    border: 2px solid black;
     width: 400px;
     height: auto;
 
@@ -78,23 +88,17 @@
 
 .contact .availability-status {
 
-    border: 2px solid black;
-
     display: flex;
     gap: 0.5rem;
 }
 
 .contact #status-header {
 
-    border: 2px solid black;
-
     font-family: "Roboto-Medium";
     font-size: 50px;
 }
 
 .contact #status-statement {
-
-    border: 2px solid black;
 
     font-family: "Roboto-Medium";
     font-size: 30px;
@@ -123,15 +127,11 @@
     
     .contact #status-header {
     
-        border: 2px solid black;
-    
         font-family: "Roboto-Medium";
         font-size: 40px;
     }
     
     .contact #status-statement {
-    
-        border: 2px solid black;
     
         font-family: "Roboto-Medium";
         font-size: 20px;
@@ -166,16 +166,14 @@
     }
     
     .contact #status-header {
-    
-        border: 2px solid black;
+            
     
         font-family: "Roboto-Medium";
         font-size: 50px;
     }
     
     .contact #status-statement {
-    
-        border: 2px solid black;
+            
     
         font-family: "Roboto-Medium";
         font-size: 30px;

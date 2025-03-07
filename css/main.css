@@ -34,7 +34,6 @@ body {
 
 .section-container {
 
-    border: 1px solid red;
     width: 100%;
     height: auto;
 
@@ -103,6 +102,25 @@ body {
 .inner-bar {
 
     background-color: #E1D5B2;
+}
+
+/* 2XS */
+@media (min-width: 1px) {
+
+    .bar {
+
+        max-width: 15px;
+    }
+
+    .bar-container {
+
+        gap: 0;
+    }
+
+    .section-container {
+
+        width: 100%;
+    }
 }
 
 /* XS */

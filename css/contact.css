@@ -24,8 +24,6 @@
 
 .contact-grid {
 
-    border: 1px solid pink;
-
     margin-top: 1rem;
     width: 100%;
 
@@ -102,4 +100,84 @@
     font-size: 30px;
 }
 
-/* TODO: Add Contact section responsive design */
+/* 2XSM */
+@media (min-width: 1px) {
+
+    .contact-grid {
+
+        grid-template-columns: repeat(auto-fit, auto);
+        grid-template-rows: repeat(auto-fit, auto);
+
+        padding: 1rem;
+    }
+
+    .contact-form {
+
+        width: auto;
+    }
+
+    .availability {
+
+        width: 10px;
+    }
+    
+    .contact #status-header {
+    
+        border: 2px solid black;
+    
+        font-family: "Roboto-Medium";
+        font-size: 40px;
+    }
+    
+    .contact #status-statement {
+    
+        border: 2px solid black;
+    
+        font-family: "Roboto-Medium";
+        font-size: 20px;
+    }
+}
+
+
+/* XS */
+@media (min-width: 475px) {
+
+    .contact-grid {
+
+        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-rows: repeat(auto-fit, auto);
+
+        padding: 0rem;
+    }
+
+    .contact-form {
+
+        width: 400px;
+    }
+
+    .availability {
+
+        width: 400px;
+    }
+
+    .availability {
+
+        width: 200px;
+    }
+    
+    .contact #status-header {
+    
+        border: 2px solid black;
+    
+        font-family: "Roboto-Medium";
+        font-size: 50px;
+    }
+    
+    .contact #status-statement {
+    
+        border: 2px solid black;
+    
+        font-family: "Roboto-Medium";
+        font-size: 30px;
+    }
+}

@@ -1,5 +1,41 @@
 /* GENERAL SECTION DESIGN */
 
+@keyframes arrow-bootup-anim {
+
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes section-bootup-anim {
+
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bar-bootup-anim {
+
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 @keyframes arrow-anim {
     from {margin-bottom: 0px;}
     to {margin-bottom: 5px;}
@@ -21,6 +57,22 @@
 .home-page {
 
     text-shadow: 1px 0px #bdbdbd;
+    
+}
+
+.section-content-container {
+
+    animation: section-bootup-anim 1.5s forwards;
+}
+
+.bar-container {
+
+    animation: bar-bootup-anim 1s forwards;
+}
+
+.arrow-down {
+
+    animation: arrow-bootup-anim 2.5s forwards;
 }
 
 .home-page .section-container {

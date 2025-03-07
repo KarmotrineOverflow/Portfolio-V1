@@ -88,7 +88,8 @@
 
 .contact .availability-status {
 
-    display: flex;
+    display: flex;    
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -103,6 +104,18 @@
     font-family: "Roboto-Medium";
     font-size: 30px;
 }
+
+
+#availability-signal {
+
+    width: 10px;
+    height: 10px;
+    background-color: green;
+
+    border-radius: 200px;
+    border: 1px solid lightgreen;
+}
+
 
 /* 2XSM */
 @media (min-width: 1px) {
@@ -137,7 +150,6 @@
         font-size: 20px;
     }
 }
-
 
 /* XS */
 @media (min-width: 475px) {

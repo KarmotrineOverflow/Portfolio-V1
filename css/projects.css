@@ -1,7 +1,5 @@
 .project-grid {
 
-    border: 2px solid pink;
-
     width: 100%;
     margin-top: 1rem;
 
@@ -19,8 +17,6 @@
 
 .project-grid-tile {
 
-    border: 1px solid black;
-
     display: grid;
     grid-template-columns: 350px;
     grid-template-rows: 1fr auto auto;
@@ -28,13 +24,16 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    background-color: #8A7F6A;
+    color: #F6F4E4;
 }
 
 .project-grid-tile .project-image-space {
 
     grid-column: auto;
     grid-row: 1 / 2;
-    background-color: rgb(104, 87, 57);
+    background-color: #8A7F6A;
 
     display: flex;
     align-items: center;
@@ -61,3 +60,37 @@
     grid-column: auto;
     grid-row: 3 / 4;
 }
+
+
+/* 2XS */
+@media (min-width: 1px) {
+
+    .project-grid {
+
+        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-rows: repeat(auto-fit, 250px);
+    }
+
+    .project-grid-tile {
+
+        grid-template-columns: 250px;
+        grid-template-rows: 1fr auto auto;
+    }
+}
+
+/* XS */
+@media (min-width: 475px) {
+
+    .project-grid {
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+    }
+
+    .project-grid-tile {
+
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr auto auto;
+    }
+}
+

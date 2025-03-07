@@ -97,6 +97,36 @@
    animation: arrow-anim 0.8s forwards;
 }
 
+/* 2XS */
+@media (min-width: 1px) {
+
+    .home-page h1 {
+
+        font-size: 95px;
+    }
+    
+    .home-page p {
+    
+        font-size: 20px;
+    }
+
+    .home-page a {
+
+        font-size: 30px;
+    }
+
+    .home-page ul {
+
+        display: block;   
+        margin: 0 auto;     
+    }
+
+    .home-page ul li {
+
+        margin-top: 10px;
+    }
+}
+
 /* XS */
 @media (min-width: 475px) {
 

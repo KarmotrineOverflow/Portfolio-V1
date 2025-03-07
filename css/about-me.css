@@ -1,3 +1,8 @@
+.about .section-container {
+
+    width: 100%;
+}
+
 .about-grid {
 
     width: 80%;
@@ -76,6 +81,32 @@
 
     border-radius: 20px;
     box-shadow: -2px 1px rgb(203, 203, 203);
+}
+
+/* 2XS */
+@media (min-width: 1px) {
+
+    .about-grid {
+
+        margin-top: 1rem;
+    }
+
+    .about-grid .about-grid-picture {
+
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+
+        text-align: center;
+
+        height: auto;
+        max-height: 400px;
+    }
+
+    .about-grid .about-grid-paragraph {
+
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+    }
 }
 
 /* XS */

@@ -1,3 +1,9 @@
+/* 
+
+    CUSTOM FONTS
+
+*/
+
 @font-face {
     font-family: "Roboto";
     src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
@@ -23,13 +29,28 @@
     src: url("../assets/fonts/roboto/Roboto-Light.ttf");
 }
 
+/* 
+
+    VARIABLES
+
+*/
+:root {
+
+    --background-color: #E0ECF8;
+    --font-color: #2094D1;
+    --outer-bar-color: #2094D1;
+    --middle-bar-color: #83A7C9;
+    --inner-bar-color: #A2C6E8;
+    --design-color: #2094D1;
+}
+
 body {
 
     margin: 0 auto;
-    background-color: #F6F4E4;
+    background-color: var(--background-color);
 
     font-family: "Roboto";
-    color: #8A7F6A;
+    color: var(--font-color);
 }
 
 .section-container {
@@ -68,7 +89,7 @@ body {
     width: 80%;
     height: 2px;
 
-    background-color: #8A7F6A;
+    background-color: var(--design-color);
 }
 
 .bar-container {
@@ -89,17 +110,17 @@ body {
 
 .outer-bar {
 
-    background-color: #A19B87;
+    background-color: var(--outer-bar-color);
 }
 
 .middle-bar {
 
-    background-color: #C1B8A4;
+    background-color: var(--middle-bar-color);
 }
 
 .inner-bar {
 
-    background-color: #E1D5B2;
+    background-color: var(--inner-bar-color);
 }
 
 /* 2XS */

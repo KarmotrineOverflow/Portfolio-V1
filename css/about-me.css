@@ -54,7 +54,7 @@
 
 .about-grid .about-grid-paragraph ul li a:hover {
 
-    color: rgb(118, 118, 118);
+    color: var(--middle-bar-color);
     text-decoration: underline;
 
     transition: 0.3s;

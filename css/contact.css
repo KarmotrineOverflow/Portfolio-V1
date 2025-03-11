@@ -34,6 +34,8 @@
     justify-content: center;
     gap: 1rem 1rem;
 
+    padding: 1rem;
+
     grid-auto-flow: row;
     grid-auto-columns: auto;
     grid-auto-rows: auto;
@@ -52,19 +54,27 @@
     flex-direction: column;
 
     gap: 0.5rem;
+
+    align-items: center;
+}
+
+.contact form .form-label {
+
+    align-self: flex-start;
 }
 
 .text-field {
 
     padding: 0.5rem;
     border-radius: 5px;
-    border: 0.2px solid #8A7F6A;
+    width: 100%;
+    border: 0.2px solid var(--inner-bar-color);
 }
 
 .contact-form #submit-btn {
 
     padding: 0.5rem;
-    background-color: #8A7F6A;
+    background-color: var(--middle-bar-color);
 
     font-family: "Roboto";
     font-size: medium;
@@ -72,6 +82,8 @@
 
     border-radius: 5px;
     border: 0px;
+
+    height: 40px;
 }
 
 /* AVAILABILITY GRID */
@@ -124,8 +136,6 @@
 
         grid-template-columns: repeat(auto-fit, auto);
         grid-template-rows: repeat(auto-fit, auto);
-
-        padding: 1rem;
     }
 
     .contact-form {
@@ -149,6 +159,37 @@
         font-family: "Roboto-Medium";
         font-size: 20px;
     }
+
+    .text-field {
+
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .availability {
+
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .contact form .form-label {
+
+        align-self: center;
+    }
+
+    .contact-form #submit-btn  {
+
+        width: 80%;
+        height: 50px;
+    }
 }
 
 /* XS */
@@ -158,8 +199,6 @@
 
         grid-template-columns: repeat(auto-fit, 400px);
         grid-template-rows: repeat(auto-fit, auto);
-
-        padding: 0rem;
     }
 
     .contact-form {
@@ -175,6 +214,10 @@
     .availability {
 
         width: 200px;
+        justify-content: start;
+        align-items: start;
+        width: 60%;
+        
     }
     
     .contact #status-header {
@@ -190,4 +233,21 @@
         font-family: "Roboto-Medium";
         font-size: 30px;
     }
+
+    .text-field {
+
+        width: 100%;
+    }
+
+    .contact form .form-label {
+
+        align-self: flex-start;
+    }
+
+    .contact-form #submit-btn {
+
+        width: 100%;
+        height: 40px;
+    }
 }
+

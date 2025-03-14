@@ -26,6 +26,7 @@
     justify-content: center;
 
     border-radius: 5px;
+    border: 0px;
 
     background-color: var(--middle-bar-color);
     color: var(--background-color);

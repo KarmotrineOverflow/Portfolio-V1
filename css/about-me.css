@@ -1,6 +1,11 @@
-.about .section-container {
+.about-me .section-container {
 
     width: 100%;
+}
+
+.about-me p {
+
+    font-size: x-large;
 }
 
 .about-grid {
@@ -9,9 +14,12 @@
     height: auto;
 
     display: grid;
-    gap: 1rem;
     grid-template-columns: repeat(auto-fit, auto);
     grid-template-rows: repeat(auto-fit, auto);
+
+    gap: 5rem;
+    padding: 30px;
+    align-items: center;
 
     grid-auto-flow: row;
     grid-auto-columns: auto;
@@ -74,8 +82,8 @@
 
 .about-grid-picture img {
 
-    max-width: 95%;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: 450px;
 
     min-height: 20px;
 

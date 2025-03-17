@@ -1,0 +1,32 @@
+{
+    "SerbisyoNow": {
+        "project_icon": "./assests/images/github.png",
+        "project_image": "./assests/images/t.jpg",
+        "description": "This application is focused on providing good stuff to the common people of Lipa City, Batangas",
+        "technologies": [
+            {
+                "tech_name": "Kotlin",
+                "tech_icon": "./assests/images/linkedin.png"
+            },
+            {
+                "tech_name": "Firebase",
+                "tech_icon": "./assests/images/facebook.png"
+            }
+        ]
+    },
+    "RoamSafe": {
+        "project_icon": "proj-icon-url",
+        "project_image": "proj-img-url",
+        "description": "desc-text",
+        "technologies": [
+            {
+                "tech_name": "tech_1_name",
+                "tech_icon": "tech_icon_url"
+            },
+            {
+                "tech_name": "tech_2_name",
+                "tech_icon": "tech_icon_url"
+            }
+        ]
+    }
+}

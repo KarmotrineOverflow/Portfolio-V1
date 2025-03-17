@@ -1,0 +1,107 @@
+@keyframes modal-popup {
+
+    from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    to {
+            opacity: 1;
+            transform: translateY(0%);
+    }
+}
+
+.modal {
+
+    border-radius: 15px;
+    border: 0px;
+
+    width: 600px;
+    height: 600px;
+    padding: 0px;
+
+    background-color: var(--background-color);
+
+    align-items: center;
+
+    animation: modal-popup 0.5s forwards;
+}
+
+.modal-header {
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 15px 15px 0px 0px;
+
+    text-align: center;
+
+    background-color: var(--inner-bar-color);
+}
+
+.modal-body {
+
+    display: flex;
+    flex-direction: row;
+    
+    gap: 1rem;
+    align-items: start;
+
+    padding: 45px;
+}
+
+.modal-description {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+
+    gap: 0px;
+}
+
+.modal-image {
+
+    width: 300px;
+    height: 300px;
+}
+
+.technology-list-item {
+    
+    margin: -20px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.close-modal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal button {
+
+    padding: 5px 30px 5px 30px;
+
+    font-family: "Roboto";
+    font-size: medium;
+    color: white;
+    
+    background-color: var(--middle-bar-color);
+
+    border: 0px;
+    border-radius: 8px;
+}
+
+.project-technologies-list {
+
+    padding-left: 30px;
+    margin: 0px;
+}

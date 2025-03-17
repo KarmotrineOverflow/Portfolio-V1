@@ -143,9 +143,24 @@
                             <div class="section-title-underline"></div>
                         </div>
 
-                        <dialog class="modal" id="modal">
-                            <div class="modal-view">Hi</div>
+                        <!-- PROJECT TILE MODAL -->
+
+                        <dialog class="modal">
+                            <div class="modal-header"><img id="project-icon" src="./assets/images/github.png"></div>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h2 class="project-name">{PROJECT_NAME}</h2>
+                                    <p class="project-description">{PROJECT_DESCRIPTION}</p>
+                                    <p><b>Technologies used:</b></p>
+                                    <ul class="project-technologies-list">                                                                 
+                                    </ul>
+                                </div>
+                                <img id="project-image" class="modal-image" src="./assets/images/t.jpg">
+                            </div>  
+                            <div class="close-modal"><button id="close-modal">Close</button></div>
                         </dialog>
+
+                        <!-- PROJECT TILES -->
 
                         <div class="project-grid">
                             <button class="project-grid-tile">
@@ -154,6 +169,10 @@
                                 </div>
                                 <h3>SerbisyoNow</h3>
                                 <p>A C2C crowdsourcing app for quick, contractless jobs</p>
+                                <p class="project-details">An Android application that relies purely on customer-to-customer interactions where users can accept or request help for whatever they need. It aims to make quick, one-time, contractless jobs accessible for quick earning.</p>
+                                <p class="project-technologies">Kotlin</p>
+                                <p class="project-technologies">Google API</p>
+                                <p class="project-technologies">Firebase</p>
                             </button>      
                             <button class="project-grid-tile">
                                 <div class="project-image-space">
@@ -161,6 +180,10 @@
                                 </div>
                                 <h3>RoamSafe</h3>
                                 <p>Smart, multipurpose pet tracking app</p>
+                                <p class="project-details">An Android application that pairs with a specially-made tracker which can be attached to pet colars. It provides GPS tracking, step counter, and location history based on the colar device's movement</p>
+                                <p class="project-technologies">Flutter</p>
+                                <p class="project-technologies">Google API</p>
+                                <p class="project-technologies">Firebase</p>
                             </button>
                             <button class="project-grid-tile">
                                 <div class="project-image-space">
@@ -168,6 +191,9 @@
                                 </div>
                                 <h3>StockWatch</h3>
                                 <p>Lightweight stock watchlist widget with AI capabilities</p>
+                                <p class="project-details">A desktop widget focused on the collection and tracking of your favorite stocks and their updates. With its AI capabilities, users can quickly receive an analysis of the stock's current standing.</p>
+                                <p class="project-technologies">React</p>
+                                <p class="project-technologies">AlphaVantage API</p>                                
                             </button>     
                             <button class="project-grid-tile">
                                 <div class="project-image-space">

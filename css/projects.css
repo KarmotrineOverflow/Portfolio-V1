@@ -68,6 +68,18 @@
     padding: 10px;
 }
 
+/* HIDDEN CLASSES (FOR STORING INFO ONLY) */
+
+.project-details {
+
+    display: none;
+}
+
+.project-technologies {
+
+    display: none;
+}
+
 /* 
 
     PROJECT TILE ANIMATION

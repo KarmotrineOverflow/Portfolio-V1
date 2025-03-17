@@ -25,15 +25,20 @@
     align-items: center;
     justify-content: center;
 
-    background-color: #8A7F6A;
-    color: #F6F4E4;
+    border-radius: 5px;
+    border: 0px;
+
+    background-color: var(--middle-bar-color);
+    color: var(--background-color);
 }
 
 .project-grid-tile .project-image-space {
 
     grid-column: auto;
     grid-row: 1 / 2;
-    background-color: #8A7F6A;
+    background-color: var(--middle-bar-color);
+
+    border-radius: 5px;
 
     display: flex;
     align-items: center;
@@ -59,6 +64,32 @@
 
     grid-column: auto;
     grid-row: 3 / 4;
+
+    padding: 10px;
+}
+
+/* HIDDEN CLASSES (FOR STORING INFO ONLY) */
+
+.project-details {
+
+    display: none;
+}
+
+.project-technologies {
+
+    display: none;
+}
+
+/* 
+
+    PROJECT TILE ANIMATION
+
+*/
+.project-grid-tile:hover {
+
+    margin: -5px;
+    position: relative;
+    transition: 0.5s;
 }
 
 

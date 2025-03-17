@@ -51,7 +51,7 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     
-    border-top: 10px solid #8A7F6A;
+    border-top: 10px solid var(--design-color);
 }
 
 .home-page {
@@ -123,7 +123,7 @@
 
     font-family: "Roboto-Light";
     font-size: xx-large;
-    color: #8A7F6A;
+    color: var(--font-color);
 }
 
 /* HOME PAGE LINKS */
